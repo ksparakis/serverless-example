@@ -1,0 +1,18 @@
+service: clubhouse-interview
+frameworkVersion: '3'
+
+plugins:
+  - serverless-offline
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+functions:
+  hello:
+    handler: src/handlers/hello.handler
+    events:
+      - http:
+          path: /
+          method: post

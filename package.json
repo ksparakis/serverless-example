@@ -1,0 +1,47 @@
+{
+  "name": "clubhouse",
+  "version": "1.0.0",
+  "description": "Interview For clubhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:hello": "npx sls invoke local -f hello --path tests/local/hello.json",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/ksparakis/clubhouse.git"
+  },
+  "author": "Konstantinos Sparakis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/ksparakis/clubhouse/issues"
+  },
+  "homepage": "https://gitlab.com/ksparakis/clubhouse#readme",
+  "dependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/plugin-proposal-async-generator-functions": "^7.18.6",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-export-default-from": "^7.18.6",
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
+    "@babel/plugin-transform-async-to-generator": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@middy/core": "^3.1.0",
+    "@middy/http-error-handler": "^3.1.0",
+    "@middy/http-json-body-parser": "^3.1.0",
+    "@middy/validator": "^3.1.0",
+    "babel-loader": "^8.2.5",
+    "middy": "^0.36.0",
+    "serverless": "^3.20.0",
+    "serverless-offline": "^8.8.1",
+    "serverless-offline-assume-role": "^1.0.0",
+    "serverless-webpack": "^5.7.1",
+    "webpack": "^5.73.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0"
+  }
+}
